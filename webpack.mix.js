@@ -11,7 +11,22 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js')
-    .postCss('resources/css/app.css', 'public/css', [
-        //
-    ]);
+mix.js('resources/js/app.js', 'public/js');
+
+// mix.js('resources/js/app.js', 'public/js')
+// 	.sass('resources/sass/app.scss', 'public/css')
+//     .postCss('resources/css/app.css', 'public/css', [ 
+//     // 
+//     ]);
+
+mix.postCss('resources/css/app.css', 'public/css/app.css')
+	.postCss('resources/css/main.css', 'public/css/app.css')
+	.postCss('resources/css/catalog.css', 'public/css/app.css')
+	.postCss('resources/css/detail.css', 'public/css/app.css')
+	.postCss('resources/css/stores.css', 'public/css/app.css');
+
+mix.options({
+    postCss: [
+        require('postcss-custom-properties')
+    ]
+});
