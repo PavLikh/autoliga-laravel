@@ -21,7 +21,7 @@ Route::get('/catalog', function () {
     return view('catalog');
 })->name('catalog');
 
-Route::get('stores', function () {
+Route::get('/stores', function () {
     return view('stores');
 })->name('stores');
 
