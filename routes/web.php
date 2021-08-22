@@ -25,7 +25,7 @@ Route::get('/stores', function () {
     return view('stores');
 })->name('stores');
 
-Route::get('/catalog', 'App\Http\Controllers\ContactController@allCatalog')->name('catalog-all');
+Route::get('/catalog', 'App\Http\Controllers\CatalogController@allCatalog')->name('catalog-all');
 Route::get('/catalog/family', 'App\Http\Controllers\ContactController@catalogFamily')->name('catalog-family');
 
 Route::get('/catalog/business', 'App\Http\Controllers\ContactController@catalogBusiness')->name('catalog-business');
