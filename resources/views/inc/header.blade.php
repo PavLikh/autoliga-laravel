@@ -47,7 +47,7 @@
 						<li><a href="">Пикапы</a></li>
 					</ul>
 				</li>
-				<li><a href="/catalog">КАТАЛОГ</a></li>
+				<li><a href="{{ route('catalog-all') }}">КАТАЛОГ</a></li>
 				<li><a href="promotion.php">Покупателям</a></li>
 			</ul>
 		</div>
