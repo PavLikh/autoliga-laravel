@@ -29,57 +29,20 @@
 
 			<section class="product_line">
     		<div id="catalog">
-          <figure class="product_item">
-            <a href="detail.php?vehicle=">
+          @foreach($data as $el)
+            <figure class="product_item">
               <div class="product_item_pict">
-                <img src="images/004_volkswagen_caravelle_white.jpg" alt="Volkswagen Caravelle" title="Volkswagen Caravelle"/>
+                <a href="#">
+                  <img src="../../images/{{ filePictureName($el) }}.jpg" alt="BMW X3 2.0d" title="**BMW X3 2.0d**"/>
+                </a>
               </div>
-            </a>
-            <figcaption>
-              <h3><a href="detail.php?vehicle=4">Volkswagen Caravelle</a></h3>
-              <span class="product_item_price old_price"></span>
-              <p class="product_item_price">2 990 000</p>
-            </figcaption>
-          </figure>
-          <figure class="product_item">
-            <a href="detail.php?vehicle=10">
-              <div class="product_item_pict">
-                <img src="images/010_hyundai_santa_fe_gray.jpg" alt="Hyundai Santa Fe" title="Hyundai Santa Fe"/>
-              </div>
-            </a>
-            <figcaption>
-              <h3><a href="detail.php?vehicle=10">Hyundai Santa Fe</a></h3>
-              <span class="product_item_price old_price"></span>
-              <p class="product_item_price">2 647 000</p>
-            </figcaption>
-          </figure>
-
-          <figure class="product_item">
-            <a href="detail.php?vehicle=3">
-              <div class="product_item_pict">
-                <img src="images/003_peugeot_traveller_black.jpg" alt="Peugeot Traveller" title="Peugeot Traveller"/>
-              </div>
-            </a>
-            <figcaption>
-              <h3><a href="detail.php?vehicle=3">Peugeot Traveller</a></h3>
-              <span class="product_item_price old_price"></span>
-              <p class="product_item_price">3 099 000</p>
-            </figcaption>
-          </figure>
-          <figure class="product_item">
-            <a href="detail.php?vehicle=6">
-              <div class="product_item_pict">
-                <img src="images/006_lexus_rx_iv_gray.jpg" alt="Lexus RX IV" title="Lexus RX IV"/>
-              </div>
-            </a>
-            <figcaption>
-              <h3><a href="detail.php?vehicle=6">Lexus RX IV</a></h3>
-              <span class="product_item_price old_price"></span>
-              <p class="product_item_price">4 271 000</p>
-            </figcaption>
-          </figure>
-                <span>Не найдено </span>
-
+              <figcaption>
+                <h3><a href="#">{{ $el->mark }} {{ $el->model }}</a></h3>
+<!--              <span class="product_item_price dark_grey old_price">**3 230 000 руб.**</span> -->
+                <p class="product_item_price dark_grey">{{ $el->price }}.</p>
+              </figcaption>
+            </figure>
+          @endforeach
         </div>
       </section>
 

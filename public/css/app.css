@@ -137,7 +137,7 @@ nav .exit {
 }
 
 .main_menu > ul > li {
-	min-width: 140px;
+	min-width: 160px;
 	/*height: 28px;*/
 	font-size: 18px;
 	/*background-color: #F2E9E1;*/
@@ -152,7 +152,7 @@ nav .exit {
 	/*background-color: #F2E9E1;*/
 	background-color: #EEF4E8;
 	background-color: var(--main-menu-color);
-	min-width: 140px;
+	min-width: 160px;
 	list-style-type: none;
 }
 
@@ -533,6 +533,43 @@ button.edit {
 	pointer-events: none;
 	color: linen;
 	box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+
+.stores {
+
+	margin: auto;
+}
+
+.stores_list {
+	display: inline-block;
+	/*width: 690px;*/
+	width: 49.5%;
+	/*height: 500px;*/
+	background-color: green;
+	float: left;
+	
+}
+
+.stores_list a:hover {
+	background-color: blue;
+}
+
+.store_item {
+	background-color: MediumSeaGreen;
+	margin-bottom: 5px;
+
+}
+
+.stores_list .store_item:hover {
+	background-color: blue;
+}
+
+.stores .map {
+	display: inline-block;
+	/*width: 500px;*/
+	width: 49.5%;
+	/*float: right;*/
 }
 
 

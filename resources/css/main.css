@@ -136,7 +136,7 @@ nav .exit {
 }
 
 .main_menu > ul > li {
-	min-width: 140px;
+	min-width: 160px;
 	/*height: 28px;*/
 	font-size: 18px;
 	/*background-color: #F2E9E1;*/
@@ -149,7 +149,7 @@ nav .exit {
 	display: none;
 	/*background-color: #F2E9E1;*/
 	background-color: var(--main-menu-color);
-	min-width: 140px;
+	min-width: 160px;
 	list-style-type: none;
 }
 

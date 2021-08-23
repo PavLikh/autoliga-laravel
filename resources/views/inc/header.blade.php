@@ -2,7 +2,7 @@
 	<nav class="nav">
 		<div class="top_menu">
 			<div class="logo">
-				<a href="/"><span>Autoliga</span></a>
+				<a href="/"><span>Autoliga-lar</span></a>
 			</div>
 
 		<!--	<a class="user_type active" href="auth.php?source=">Посетитель</a>
@@ -19,36 +19,28 @@
 		<div class="main_menu">
 			<ul>
 				<li class="submenu">
-					<a href="/catalog?purpose=1">Семейный</a>
+					<a href="/catalog/1">Семейный</a>
 					<div class="submenu_border"></div>
 					<ul>
-						<li><a href="/catalog?feature=1">Cедан</a></li>
-						<li><a href="/catalog?feature=2">Универсал</a></li>
-						<li><a href="/catalog?feature=3">Кроссовер</a></li>
-						<li><a href="/catalog?feature=4">Минивэн</a></li>
+						<li><a href="/catalog/family/1">Cедан</a></li>
+						<li><a href="/catalog/family/2">Универсал</a></li>
+						<li><a href="/catalog/family/3">Кроссовер</a></li>
+						<li><a href="/catalog/family/4">Минивэн</a></li>
 					</ul>
 				</li>
 				<li class="submenu">
-					<a href="/catalog?purpose=2">Для бизнеса</a>
+					<a href="/catalog/2">Для бизнеса</a>
 					<div class="submenu_border"></div>
 					<ul>
-						<li><a href="/catalog?feature=5">Легкий грузовой</a></li>
-						<li><a href="/catalog?feature=6">Грузовой</a></li>
-						<li><a href="/catalog?feature=7">Автобус</a></li>
+						<li><a href="/catalog/business/5">Легкий грузовой</a></li>
+						<li><a href="/catalog/business/6">Грузовой</a></li>
+						<li><a href="/catalog/business/7">Автобус</a></li>
 					</ul>
 				</li>
 				<li class="submenu">
 					<a href="/stores">Наши салоны</a>
-				<li class="submenu">
-					<a href="#">Внедорожники</a>
-					<div class="submenu_border"></div>
-					<ul>
-						<li><a href="">Рамные</a></li>
-						<li><a href="">Пикапы</a></li>
-					</ul>
 				</li>
-				<li><a href="{{ route('catalog-all') }}">КАТАЛОГ</a></li>
-				<li><a href="promotion.php">Покупателям</a></li>
+				<li><a href="/promotion">Покупателям</a></li>
 			</ul>
 		</div>
 				
