@@ -21,7 +21,7 @@
 					<div class="banner_content">
 						<h1>Новый Mercedes C-класс</h1>
 						<h3></h3>
-						<h2>Подчеркнуто динамичный характер. С легкостью преодолевает любые трудности. Откройте для себя превосходные качества нового седана C-класса. Динамичного, элегантного и роскошного как никогда <a href="catalog.php?model[]=1&purpose=1" class="detail_link">подробнее</a><!-- <a href="#1" class="detail_link">подробнее</a> --></h2>
+						<h2>Подчеркнуто динамичный характер. С легкостью преодолевает любые трудности. Откройте для себя превосходные качества нового седана C-класса. Динамичного, элегантного и роскошного как никогда <a href="/detail/1" class="detail_link">подробнее</a><!-- <a href="#1" class="detail_link">подробнее</a> --></h2>
 					</div>
 				</div>
 			</div>
@@ -32,7 +32,7 @@
           @foreach($data as $el)
             <figure class="product_item">
               <div class="product_item_pict">
-                <a href="#">
+                <a href="/detail/{{ $el->id }}">
                   <img src="../../images/{{ filePictureName($el) }}.jpg" alt="BMW X3 2.0d" title="**BMW X3 2.0d**"/>
                 </a>
               </div>

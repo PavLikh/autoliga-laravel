@@ -13,5 +13,5 @@
 @endsection
 
 @section('content')
-
+	<h2>... Страница в разработке...</h2>
 @endsection

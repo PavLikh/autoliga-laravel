@@ -32,9 +32,10 @@ Route::get('promotion', function () {
 })->name('promotion');
 
 
-Route::get('/catalog', 'App\Http\Controllers\CatalogController@allCatalog')->name('catalog-all');
+Route::get('/catalog', 'App\Http\Controllers\CatalogController@allCatalog')->name('all-catalog');
 Route::get('/catalog/{purposeId}', 'App\Http\Controllers\CatalogController@catalogByPurpose')->name('catalog-purpose');
 Route::get('/catalog/family/{featureId}', 'App\Http\Controllers\CatalogController@catalogByFeature')->name('catalog-feature');
 Route::get('/catalog/business/{featureId}', 'App\Http\Controllers\CatalogController@catalogByFeature')->name('catalog-feature');
 Route::get('/detail/{vehicleId}', 'App\Http\Controllers\DetailController@showOneVehicle')->name('one-vehicle');
+Route::get('/stores', 'App\Http\Controllers\StoreController@allStores')->name('all-stores');
 Route::get('/stores/{storeId}', 'App\Http\Controllers\StoreController@showOneStore')->name('one-store');

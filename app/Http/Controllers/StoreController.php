@@ -9,6 +9,18 @@ use \DB;
 class StoreController extends Controller
 {
 
+    public function allStores() {
+
+    	return view('stores', ['data' => DB::table('stores')
+    		->select('stores.id as id',
+    			'stores.name_ru as name_ru',
+    			'stores.address_ru as address',
+    			'stores.coordinates as coordinates',
+    			'regions.name_ru as region')
+			->join('regions', 'stores.region_id', '=', 'regions.id')
+    		->get()]);
+    }
+
     public function showOneStore($storeId) {
 
     	$store = new Store;
