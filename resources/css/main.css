@@ -207,7 +207,7 @@ nav .exit {
 }
 
 .banner h1{
-	color: green;
+	color: LightCyan;
 	font-size: 3.428em;
 	font-weight: normal;
 	line-height: 1.27em;
@@ -216,7 +216,7 @@ nav .exit {
 	text-transform: uppercase;
 }
 .banner h2{
-	color: green;
+	color: LightCyan;
 	font-size: 1.286em;
 	font-weight: normal;
 	width: 75%;
@@ -228,14 +228,18 @@ nav .exit {
 
 .detail_link {
 	text-decoration: none;
-	position: relative;	
+	position: relative;
+	color: #ff7519;
 }
 
 
 .detail_link:hover {
-	color: #ff7519;
+	color: #ff9f5f;
 }
 
+.detail_link:visited {
+	color: #ff7519;
+}
 
 /* END advert / рекламной баннер */
 
