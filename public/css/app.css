@@ -183,10 +183,33 @@ nav .exit {
 
 /**/
 
-.tagline {
-
-	text-align: center;
+.devPanel {
 	background-color: grey;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.devPanel h1 {
+	display: block;
+}
+
+.devPanel div {
+
+}
+
+.devPanel a {
+	outline: 1px solid black;
+}
+
+.devPanel a:hover, .devPanel .active {
+	color: #ff7519;
+	outline: 1px solid #ff7519;
+}
+
+.devInfo img {
+	width: 100%;
 }
 
 

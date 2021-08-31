@@ -1,2 +1,0 @@
-@section('tagline')
-	@show

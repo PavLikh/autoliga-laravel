@@ -14,7 +14,7 @@
 	<div class="container">
 
 		@include('inc.header')
-		@include('inc.tagline')
+		@include('inc.devpanel')
 
  		@if(!Request::is('/'))
 			@include('inc.nav-chain')

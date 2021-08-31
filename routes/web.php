@@ -19,17 +19,13 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'App\Http\Controllers\CatalogController@productLine')->name('home');
 
-Route::get('/catalog', function () {
-    return view('catalog');
-})->name('catalog');
-
-Route::get('/stores', function () {
-    return view('stores');
-})->name('stores');
-
-Route::get('promotion', function () {
+Route::get('/promotion', function () {
     return view('promotion');
 })->name('promotion');
+
+Route::get('structuredb', function () {
+    return view('structureDB');
+})->name('structureDB');
 
 
 Route::get('/catalog', 'App\Http\Controllers\CatalogController@allCatalog')->name('all-catalog');
